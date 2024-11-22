@@ -218,14 +218,7 @@ async function edit (_id, change) {
   const product = await get(_id)
 
   // todo can we use spread operators here?
-  Object.keys(change).forEach(function (key) {
-    product[key] = change[key]
-  })
-  
-  await product.save()
-
-  return product
-}
+  c
 
 /**
  * Delete a product
